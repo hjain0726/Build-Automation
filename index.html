@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="release/compress.min.js"></script>
+    <link rel="stylesheet" href="release/compress.css">
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+    <input type="text" ng-model="first" placeholder="Enter first number">
+    <br>
+    <br>
+    <input type="text" ng-model="second" placeholder="Enter second number">
+    <br>
+    <br>
+    <button ng-click="calladd()">Add</button>
+    <br>
+    <p id="result">Result is:{{result}}</p>
+</body>
+
+</html>
